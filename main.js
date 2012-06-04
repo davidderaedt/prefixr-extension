@@ -26,6 +26,7 @@
 
 /** extension to generate CSS prefixes using the Prefixr API */
 define(function (require, exports, module) {
+    
     'use strict';
 
 
@@ -46,25 +47,23 @@ define(function (require, exports, module) {
         // Retrieve selection
         var selectedText = EditorManager.getFocusedEditor().getSelectedText();
 
-        if(selectedText==""){
+        if (selectedText === "") {
             window.alert(EMPTY_MSG);
             return;
         }
 
-        
-        console.log("sending to prefixr");
 
         // Send to prefixr
         $.ajax({
             url: API_URL,
-            type:"GET",
-            data:"css="+selectedText,
+            type: "GET",
+            data: "css=" + selectedText,
 
-            error:function(data){
+            error: function (data) {
                 window.alert(ERROR_MSG);
             },
 
-            success:function(data){
+            success: function (data) {
                 EditorManager.getFocusedEditor()._codeMirror.replaceSelection(data);
             }
         });
