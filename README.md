@@ -14,7 +14,7 @@ To install this extension, simply place the ```prefixr``` folder inside the ```b
 
 Usage
 =====
-Select some CSS code, and then select "Prefixr" from the Edit menu. Your code should then be replaced by the prefixed equivalent.
+Select some CSS code, and then select "Generate CSS prefixes" from the Edit menu. Your code should then be replaced by the prefixed equivalent.
 
 
 Known issues
