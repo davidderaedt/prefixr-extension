@@ -1,0 +1,28 @@
+/* Try it out. Click the Prefixize button. */
+.box {
+   opacity: .5;
+}
+
+.container {
+   box-shadow: 20px;
+   -moz-transition: -moz-box-shadow 2s;
+   -webkit-border-radius: 4px;
+   animation: slide 1s alternate;
+   background: linear-gradient(top, #e3e3e3 10%, white);
+   display: -moz-box;
+}
+
+@-webkit-keyframes "slide" {
+   0% { left: 0; box-shadow: 10px 10px 10px black; }
+   100% { left: 50px; box-shadow: 5px 5px 5px black; }
+}	
+
+/* Want variables? Or, if you don't like that idea, just ignore it. */
+
+@variables {
+  main_color: red;  
+}
+
+.content {
+  background: var(main_color);  
+}

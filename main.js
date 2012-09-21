@@ -57,13 +57,14 @@ define(function (require, exports, module) {
         $.ajax({
             url: API_URL,
             type: "GET",
-            data: "css=" + selectedText,
+            data: "css=" + encodeURIComponent(selectedText),
 
             error: function (data) {
                 window.alert(ERROR_MSG);
             },
 
             success: function (data) {
+                console.log(data);
                 EditorManager.getCurrentFullEditor()._codeMirror.replaceSelection(data);
             }
         });
