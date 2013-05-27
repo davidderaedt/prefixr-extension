@@ -1,0 +1,12 @@
+{
+    "name": "dehats.prefixr",
+    "title": "Prefixr",
+    "description": "Generate browser specific CSS prefixes using the prefixr service",
+    "homepage": "https://github.com/davidderaedt/prefixr-extension",
+    "version": "1.0.0",
+    "author": "David Deraedt <dderaedt@adobe.com> (http://www.dehats.com)",
+    "license": "MIT",
+    "engines": {
+        "brackets": ">=0.20.0"
+    }
+}
